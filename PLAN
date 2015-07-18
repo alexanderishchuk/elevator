@@ -1,0 +1,14 @@
+# PLANNER
+1. Checks all objects statuses and plans some actions.
+
+# ELEVATOR
+1. Moves passangers between floors.
+
+# CLOCK
+1. Can be set to testing start time.
+2. Can be set to testing end time.
+
+#FLOOR
+1. Can have only one passanger at the time.
+
+# PASSANGER
