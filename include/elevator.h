@@ -2,11 +2,11 @@
 #define ELEVATOR_H
 
 
-class elevator
+class Elevator
 {
     public:
-        elevator();
-        virtual ~elevator();
+        Elevator();
+        virtual ~Elevator();
     protected:
     private:
 };

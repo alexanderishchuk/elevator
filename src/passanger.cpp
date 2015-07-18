@@ -1,11 +1,11 @@
 #include "../include/passanger.h"
 
-passanger::passanger()
+Passanger::Passanger()
 {
     //ctor
 }
 
-passanger::~passanger()
+Passanger::~Passanger()
 {
     //dtor
 }

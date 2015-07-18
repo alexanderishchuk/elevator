@@ -2,11 +2,11 @@
 #define FLOOR_H
 
 
-class floor
+class Floor
 {
     public:
-        floor();
-        virtual ~floor();
+        Floor();
+        virtual ~Floor();
     protected:
     private:
 };

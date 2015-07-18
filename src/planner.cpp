@@ -1,11 +1,11 @@
 #include "../include/planner.h"
 
-planner::planner()
+Planner::Planner()
 {
     //ctor
 }
 
-planner::~planner()
+Planner::~Planner()
 {
     //dtor
 }

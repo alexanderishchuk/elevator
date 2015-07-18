@@ -2,11 +2,11 @@
 #define PLANNER_H
 
 
-class planner
+class Planner
 {
     public:
-        planner();
-        virtual ~planner();
+        Planner();
+        virtual ~Planner();
     protected:
     private:
 };

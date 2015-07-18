@@ -1,11 +1,11 @@
 #include "../include/floor.h"
 
-floor::floor()
+Floor::Floor()
 {
     //ctor
 }
 
-floor::~floor()
+Floor::~Floor()
 {
     //dtor
 }

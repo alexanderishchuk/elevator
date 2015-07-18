@@ -2,11 +2,11 @@
 #define PASSANGER_H
 
 
-class passanger
+class Passanger
 {
     public:
-        passanger();
-        virtual ~passanger();
+        Passanger();
+        virtual ~Passanger();
     protected:
     private:
 };

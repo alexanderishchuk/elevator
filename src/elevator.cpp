@@ -1,11 +1,11 @@
 #include "../include/elevator.h"
 
-elevator::elevator()
+Elevator::Elevator()
 {
     //ctor
 }
 
-elevator::~elevator()
+Elevator::~Elevator()
 {
     //dtor
 }
