@@ -1,3 +1,5 @@
+/* clock.h
+    Sets and counts time for tests. */
 #ifndef CLOCK_H
 #define CLOCK_H
 

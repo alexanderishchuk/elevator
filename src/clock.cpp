@@ -1,3 +1,5 @@
+/* clock.cpp
+    Clock class implementation file */
 #include "clock.h"
 #include <iostream>
 
