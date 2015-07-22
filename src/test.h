@@ -1,5 +1,5 @@
 /* test.h
-    Set of various tests of elevator and others */
+    Main elevator test, counts the amount of passangers for given time */
 #ifndef TEST_H
 #define TEST_H
 

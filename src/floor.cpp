@@ -14,7 +14,7 @@ Floor::~Floor()
     std::cout << "Floor::dtor()" << std::endl;
 }
 
-bool Floor::check_passanger()
+bool Floor::has_passanger()
 {
     return passanger;
 }

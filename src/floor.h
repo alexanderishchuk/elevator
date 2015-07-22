@@ -7,7 +7,7 @@ class Floor
     public:
         Floor();
         virtual ~Floor();
-        bool check_passanger ();
+        bool has_passanger ();
         void place_passanger ();
         void release_passanger ();
 
