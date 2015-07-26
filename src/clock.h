@@ -7,7 +7,7 @@
 class Clock
 {
     public:
-        Clock();
+        Clock(int = 8, int = 0, int = 0);
         virtual ~Clock();
         void set_clock(int, int, int);
         void print_time();

@@ -8,9 +8,9 @@
 int main (int argc, char *argv[])
 {
     Clock * clock = new Clock;
-    
-    clock->test_clock_setting();
+
+    clock->print_time();
     delete clock;
-    
+
     return 0;
 }

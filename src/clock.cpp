@@ -3,11 +3,11 @@
 #include "clock.h"
 #include <iostream>
 
-Clock::Clock()
+Clock::Clock(int h, int m, int s)
 {
     //ctor
     std::cout << "CLock::ctor()" << std::endl;
-    
+    set_clock(h, m, s);
 }
 
 Clock::~Clock()
@@ -47,7 +47,7 @@ void Clock::set_clock (int hr, int min, int sec)
         std::cout << " Seconds too high. Setting to 59" << std:: endl;
         sec = 59;
     }
-    
+
     hours = hr;
     minutes = min;
     seconds = sec;
@@ -59,12 +59,12 @@ void Clock::print_time ()
         std::cout << "0" << hours << ":";
     else
         std::cout << hours << ":";
-    
+
     if (minutes < 10)
         std::cout << "0" << minutes << ":";
     else
         std::cout << minutes << ":";
-        
+
     if (seconds < 10)
         std::cout << "0" << seconds << std::endl;
     else
@@ -76,7 +76,7 @@ void Clock::test_clock_setting ()
     int hour;
     int minute;
     int second;
-    
+
     std::cout << "Set time, space is devider (ex.: 8 15 00 for 8:15 AM): ";
     std::cin >> hour >> minute >> second;
     set_clock(hour, minute, second);
