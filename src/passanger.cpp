@@ -1,14 +1,16 @@
 #include "passanger.h"
 #include <iostream>
 
+using namespace std;
+
 Passanger::Passanger()
 {
     //ctor
-    std::cout << "Passanger::ctor()" << std::endl;
+    cout << "Passanger::ctor()" << endl;
 }
 
 Passanger::~Passanger()
 {
     //dtor
-    std::cout << "Passanger::dtor()" << std::endl;
+    cout << "Passanger::dtor()" << endl;
 }

@@ -1,14 +1,16 @@
 #include "elevator.h"
 #include <iostream>
 
+using namespace std;
+
 Elevator::Elevator()
 {
     //ctor
-    std::cout << "Elevator::ctor()" << std::endl;
+    cout << "Elevator::ctor()" << endl;
 }
 
 Elevator::~Elevator()
 {
     //dtor
-    std::cout << "Elevator::dtor()" << std::endl;
+    cout << "Elevator::dtor()" << endl;
 }

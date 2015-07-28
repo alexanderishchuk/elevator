@@ -6,14 +6,16 @@
 #define STOP "stop"
 #define CURRENT "current"
 
+#include <string>
+using namespace std;
 
 class Clock
 {
     public:
-        Clock(int = 8, int = 0, int = 0);
+        Clock();
         virtual ~Clock();
-        void set_time(char *);
-        void print_time();
+        void set_time(string);
+        void print_time(string);
         void test_clock_setting();
     protected:
     private:

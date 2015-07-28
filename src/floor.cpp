@@ -1,17 +1,19 @@
 #include "floor.h"
 #include <iostream>
 
+using namespace std;
+
 Floor::Floor()
 {
     //ctor
-    std::cout << "Floor::ctor()" << std::endl;
+    cout << "Floor::ctor()" << endl;
     passanger = false;
 }
 
 Floor::~Floor()
 {
     //dtor
-    std::cout << "Floor::dtor()" << std::endl;
+    cout << "Floor::dtor()" << endl;
 }
 
 bool Floor::has_passanger()

@@ -9,7 +9,13 @@ int main (int argc, char *argv[])
 {
     Clock * clock = new Clock;
 
-    clock->print_time();
+    clock->set_time(START);
+    clock->set_time(STOP);
+    clock->set_time(CURRENT);
+    clock->print_time(START);
+    clock->print_time(STOP);
+    clock->print_time(CURRENT);
+
     delete clock;
 
     return 0;

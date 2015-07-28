@@ -1,14 +1,16 @@
 #include "planner.h"
 #include <iostream>
 
+using namespace std;
+
 Planner::Planner()
 {
     //ctor
-    std::cout << "Planner::ctor()" << std::endl;
+    cout << "Planner::ctor()" << endl;
 }
 
 Planner::~Planner()
 {
     //dtor
-    std::cout << "Planner::dtor()" << std::endl;
+    cout << "Planner::dtor()" << endl;
 }
