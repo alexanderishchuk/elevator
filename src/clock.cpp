@@ -7,7 +7,7 @@ Clock::Clock(int h, int m, int s)
 {
     //ctor
     std::cout << "CLock::ctor()" << std::endl;
-    set_clock(h, m, s);
+    set_time(h, m, s);
 }
 
 Clock::~Clock()
@@ -16,41 +16,37 @@ Clock::~Clock()
     std::cout << "Clock::dtor()" << std::endl;
 }
 
-void Clock::set_clock (int hr, int min, int sec)
+void Clock::set_time (char * t[])
 {
-    if (hr < 0)
+    if (t[0] < 0)
     {
         std::cout << "Hours too low. Setting to 00" << std::endl;
-        hr = 0;
-    } else if (hr > 59)
+        t[0] = 0;
+    } else if (t[0] > 59)
     {
         std::cout << " Hours too high. Setting to 59" << std::endl;
-        hr = 59;
+        t[0] = 59;
     }
 
-    if (min < 0)
+    if (t[1] < 0)
     {
         std::cout << "Minutes too low. Setting to 00" << std::endl;
-        min = 0;
-    } else if (min > 59)
+        t[1] = 0;
+    } else if (t[1] > 59)
     {
         std::cout << " Minutes too high. Setting to 59" << std:: endl;
-        min = 59;
+        t[1] = 59;
     }
 
-    if (sec < 0)
+    if (t[2] < 0)
     {
         std::cout << "Seconds too low. Setting to 00" << std::endl;
-        sec = 0;
-    } else if (sec > 59)
+        t[2] = 0;
+    } else if (t[2] > 59)
     {
         std::cout << " Seconds too high. Setting to 59" << std:: endl;
-        sec = 59;
+        t[2] = 59;
     }
-
-    hours = hr;
-    minutes = min;
-    seconds = sec;
 }
 
 void Clock::print_time ()
@@ -79,6 +75,6 @@ void Clock::test_clock_setting ()
 
     std::cout << "Set time, space is devider (ex.: 8 15 00 for 8:15 AM): ";
     std::cin >> hour >> minute >> second;
-    set_clock(hour, minute, second);
+    set_time(hour, minute, second);
     print_time();
 }
