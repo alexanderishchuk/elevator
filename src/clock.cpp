@@ -31,7 +31,7 @@ void Clock::set_time (string time_type)
     else
         cout << "Wrong time type in void Clock::set_time(string).";
 
-    cout << "Set " << time_type << " time, space is devider (ex.: 8 15 00 for 8:15 AM): ";
+    cout << "Set " << time_type << " time (ex.: 8 15 00 for 8:15 AM): ";
     cin >> hours >> minutes >> seconds;
     time[0] = hours;
     time[1] = minutes;
@@ -66,8 +66,6 @@ void Clock::set_time (string time_type)
         cout << "Seconds too high. Setting to 59" << endl;
         time[2] = 59;
     }
-
-//    cout << time[0] << ":" << time[1] << ":" << time[2] << endl;
 }
 
 void Clock::print_time (string time_type)
@@ -83,5 +81,14 @@ void Clock::print_time (string time_type)
     else
         cout << "Wrong time type in void Clock::set_time(string).";
 
-    cout << time[0] << ":" << time[1] << ":" << time[2] << endl;
+    for (int i = 0; i <= 1; i++)
+    {
+        if (time[i] < 10)
+            cout << "0" << time[i] << ":";
+        else
+            cout << time[i] << ":";
+    }
+    
+    if (time[2] < 10)
+        cout << "0" << time[2] << endl;
 }
