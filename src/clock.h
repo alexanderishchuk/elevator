@@ -16,7 +16,6 @@ class Clock
         virtual ~Clock();
         void set_time(string);
         void print_time(string);
-        void test_clock_setting();
     protected:
     private:
         int start_time[3];

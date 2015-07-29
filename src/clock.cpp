@@ -43,8 +43,8 @@ void Clock::set_time (string time_type)
         time[0] = 0;
     } else if (time[0] > 23)
     {
-        cout << "Hours too high. Setting to 59" << endl;
-        time[0] = 59;
+        cout << "Hours too high. Setting to 23" << endl;
+        time[0] = 23;
     }
 
     if (time[1] < 0)
@@ -67,7 +67,7 @@ void Clock::set_time (string time_type)
         time[2] = 59;
     }
 
-    cout << time[0] << ":" << time[1] << ":" << time[2] << endl;
+//    cout << time[0] << ":" << time[1] << ":" << time[2] << endl;
 }
 
 void Clock::print_time (string time_type)
@@ -85,15 +85,3 @@ void Clock::print_time (string time_type)
 
     cout << time[0] << ":" << time[1] << ":" << time[2] << endl;
 }
-
-/* void Clock::test_clock_setting ()
-{
-    int hour;
-    int minute;
-    int second;
-
-    cout << "Set time, space is devider (ex.: 8 15 00 for 8:15 AM): ";
-    cin >> hour >> minute >> second;
-    set_time(hour, minute, second);
-    print_time();
-} */
