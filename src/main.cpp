@@ -9,6 +9,7 @@ int main (int argc, char *argv[])
 {
     Clock * clock = new Clock;
 
+    // test ride
     clock->set_time(START);
     clock->set_time(STOP);
     clock->set_time(CURRENT);
