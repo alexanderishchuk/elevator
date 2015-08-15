@@ -3,7 +3,6 @@
 ##################
 [Bb]in/*
 [Oo]bj/*
-*.cbp
 *.depend
 *.layout
 *.o
