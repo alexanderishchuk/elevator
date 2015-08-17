@@ -19,7 +19,7 @@ Clock::~Clock()
 
 void Clock::set_time (string time_type)
 {
-    int * time;
+    int * time = 0;
     int hours, minutes, seconds;
 
     if (time_type == START)
@@ -70,7 +70,7 @@ void Clock::set_time (string time_type)
 
 void Clock::print_time (string time_type)
 {
-    int * time;
+    int * time = 0;
 
     if (time_type == START)
         time = start_time;
@@ -79,7 +79,7 @@ void Clock::print_time (string time_type)
     else if (time_type == CURRENT)
         time = current_time;
     else
-        cout << "Wrong time type in void Clock::set_time(string).";
+        cout << "Wrong time type in void Clock::print_time(string).";
 
     for (int i = 0; i <= 1; i++)
     {
@@ -88,7 +88,9 @@ void Clock::print_time (string time_type)
         else
             cout << time[i] << ":";
     }
-    
+
     if (time[2] < 10)
         cout << "0" << time[2] << endl;
+    else
+        cout << time[2] << endl;
 }
