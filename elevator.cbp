@@ -34,6 +34,8 @@
 		<Unit filename="src/passanger.h" />
 		<Unit filename="src/planner.cpp" />
 		<Unit filename="src/planner.h" />
+		<Unit filename="src/test.cpp" />
+		<Unit filename="src/test.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
