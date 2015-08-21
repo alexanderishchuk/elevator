@@ -94,3 +94,15 @@ void Clock::print_time (string time_type)
     else
         cout << time[2] << endl;
 }
+
+void Clock::tick_up ()
+{
+    current_time[2]++;
+    
+    for (int i = 2; i > 0; i--)
+        if (current_time[i]>59)
+        {
+            current_time[i] = 0;
+            current_time[i - 1]++;
+    }
+}

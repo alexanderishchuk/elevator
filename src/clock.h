@@ -16,7 +16,7 @@ class Clock
         virtual ~Clock();
         void set_time(string);
         void print_time(string);
-        void tick_up (int);
+        void tick_up ();
     protected:
     private:
         int start_time[3];
