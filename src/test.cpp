@@ -27,19 +27,21 @@ void Test::run()
     Planner * planner = new Planner();
     Clock * clock = new Clock();
     Elevator * elevator = new Elevator();
-    Floor * floor_1 = new Floor();
-    Floor * floor_2 = new Floor();
-    Button * button_1 = new Button();
-    Button * button_2 = new Button();
+    Floor floor[2];
+    Button button[2];
 
-    clock->set_time(START);
-    clock->set_time(STOP);
+    clock->set_time(START, VERBOSE);
+    clock->set_time(STOP, VERBOSE);
+
+    while (clock->work_time())
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            if (floor[i].has_passanger());
+        }
+    }
 
     delete planner;
     delete clock;
     delete elevator;
-    delete floor_1;
-    delete floor_2;
-    delete button_1;
-    delete button_2;
 }

@@ -5,6 +5,8 @@
 #define START "start"
 #define STOP "stop"
 #define CURRENT "current"
+#define VERBOSE true
+#define SILENT false
 
 #include <string>
 using namespace std;
@@ -14,9 +16,10 @@ class Clock
     public:
         Clock();
         virtual ~Clock();
-        void set_time(string);
+        void set_time(string, bool = false);
         void print_time(string);
         void tick_up ();
+        bool work_time ();
     protected:
     private:
         int start_time[3];
