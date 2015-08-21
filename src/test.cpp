@@ -43,8 +43,3 @@ void Test::run()
     delete button_1;
     delete button_2;
 }
-
-void Test::set_data()
-{
-
-}
