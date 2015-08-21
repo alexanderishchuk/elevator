@@ -9,6 +9,9 @@ class Test
     public:
         Test();
         virtual ~Test();
+        void run ();
+        void set_data ();
+        void init_components ();
     protected:
     private:
 };

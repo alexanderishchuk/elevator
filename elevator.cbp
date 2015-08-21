@@ -23,6 +23,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="src/button.cpp" />
+		<Unit filename="src/button.h" />
 		<Unit filename="src/clock.cpp" />
 		<Unit filename="src/clock.h" />
 		<Unit filename="src/elevator.cpp" />

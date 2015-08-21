@@ -3,21 +3,13 @@
     elevator v.0.1-alfa-r1
     The simlpe elevator simulator. Counts how many passangers can
     move between two floors per setted time. */
-#include "clock.h"
+#include "test.h"
 
 int main (int argc, char *argv[])
 {
-    Clock * clock = new Clock;
-
-    // test ride
-    clock->set_time(START);
-    clock->set_time(STOP);
-    clock->set_time(CURRENT);
-    clock->print_time(START);
-    clock->print_time(STOP);
-    clock->print_time(CURRENT);
-
-    delete clock;
+    Test * test = new Test();
+    test->run();
+    delete test;
 
     return 0;
 }
