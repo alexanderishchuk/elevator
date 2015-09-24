@@ -26,7 +26,17 @@ void Passanger::set_location(int loc)
 	location = loc;
 }
 
-int get_location()
+int Passanger::get_location()
 {
 	return location;
+}
+
+void Passanger::set_loc_id(int id)
+{
+    loc_id = id;
+}
+
+int Passanger::get_loc_id()
+{
+    return loc_id;
 }
