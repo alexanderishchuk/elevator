@@ -35,9 +35,13 @@ void Test::run()
 
     while (clock->work_time())
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i <= 1; i++)
         {
-            if (floor[i].has_passanger());
+            if (floor[i].has_passanger())
+            {
+                if (elevator.get_location() == passanger.get_location())
+                {}
+            }
         }
     }
 
