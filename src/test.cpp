@@ -24,26 +24,26 @@ Test::~Test()
 
 void Test::run()
 {
-    Planner * planner = new Planner();
-    Clock * clock = new Clock();
-    Elevator * elevator = new Elevator();
-    Floor floor[2];
-    Button button[2];
+    Planner * planner = new Planner;
+    Clock * clock = new Clock;
+    Elevator * elevator = new Elevator;
+    Floor * floor_1 = new Floor;
+    Floor * floor_2 = new Floor;
+    Button * button_1 = new Button;
+    Button * button_2 = new Button;
 
     clock->set_time(START, VERBOSE);
     clock->set_time(STOP, VERBOSE);
 
     while (clock->work_time())
     {
-        for (int floor_id = 0; floor_id <= 1; floor_id++)
-        {
-            if (!floor[floor_id].has_passanger())
-            {
-
-            }
-        }
+        
     }
 
+    delete button_2;
+    delete button_1;
+    delete floor_2;
+    delete floor_1;
     delete planner;
     delete clock;
     delete elevator;

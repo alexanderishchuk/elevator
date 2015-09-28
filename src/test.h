@@ -10,7 +10,6 @@ class Test
         Test();
         virtual ~Test();
         void run ();
-        void init_components ();
     protected:
     private:
 };
