@@ -14,3 +14,8 @@ Planner::~Planner()
     //dtor
     cout << "Planner::dtor()" << endl;
 }
+
+void Planner::plan_psngr(int psngr)
+{
+
+}

@@ -7,13 +7,13 @@ class Floor
     public:
         Floor();
         virtual ~Floor();
-        bool has_passanger ();
-        void place_passanger ();
-        void release_passanger ();
-
-    protected:
+        bool get_psngr_present();
+        void set_psngr_present(bool);
+        bool get_psngr_planned();
+        void set_psngr_planned(bool);
     private:
-        bool passanger;
+        bool psngr_present;
+        bool psngr_planned;
 };
 
 #endif // FLOOR_H

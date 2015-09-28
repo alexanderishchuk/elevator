@@ -7,7 +7,8 @@ Floor::Floor()
 {
     //ctor
     cout << "Floor::ctor()" << endl;
-    passanger = false;
+    psngr_present = false;
+    psngr_planned = false;
 }
 
 Floor::~Floor()
@@ -16,17 +17,22 @@ Floor::~Floor()
     cout << "Floor::dtor()" << endl;
 }
 
-bool Floor::has_passanger()
+bool Floor::get_psngr_planned()
 {
-    return passanger;
+    return psngr_planned;
 }
 
-void Floor::place_passanger()
+void Floor::set_psngr_planned(bool planned)
 {
-    passanger = true;
+    psngr_planned = planned;
 }
 
-void Floor::release_passanger()
+bool Floor::get_psngr_present()
 {
-    passanger = false;
+    return psngr_present;
+}
+
+void Floor::set_psngr_present(bool present)
+{
+    psngr_present = present;
 }

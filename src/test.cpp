@@ -10,41 +10,58 @@
 #include <iostream>
 using namespace std;
 
+
 Test::Test()
 {
     //ctor
-    std::cout << "Test::ctor()" << std::endl;
+    cout << "Test::ctor()" << std::endl;
 }
 
 Test::~Test()
 {
     //dtor
-    std::cout << "Test::dtor()" << std::endl;
+    cout << "Test::dtor()" << std::endl;
 }
 
 void Test::run()
 {
-    Planner * planner = new Planner;
     Clock * clock = new Clock;
+    Planner * planner = new Planner;
+
+    Floor ** floor = new Floor *[2];
+    floor[0] = new Floor;
+    floor[1] = new Floor;
+
     Elevator * elevator = new Elevator;
-    Floor * floor_1 = new Floor;
-    Floor * floor_2 = new Floor;
-    Button * button_1 = new Button;
-    Button * button_2 = new Button;
+
+    Button ** button = new Button *[2];
+    button[0] = new Button;
+    button[1] = new Button;
+
+    Passanger ** psngr = new Passanger*[2];
 
     clock->set_time(START, VERBOSE);
     clock->set_time(STOP, VERBOSE);
 
     while (clock->work_time())
     {
-        
+        for (int floor_num = 0; floor_num < 2; floor_num++)
+        {
+            if (!floor[floor_num]->get_psngr_present())
+            {
+                if (true){}
+                planner->plan_psngr(floor_num);
+            }
+        }
     }
 
-    delete button_2;
-    delete button_1;
-    delete floor_2;
-    delete floor_1;
+    delete button[1];
+    delete button[0];
+    delete [] button;
+    delete floor[1];
+    delete floor[0];
+    delete [] floor;
+    delete elevator;
     delete planner;
     delete clock;
-    delete elevator;
 }

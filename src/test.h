@@ -10,8 +10,6 @@ class Test
         Test();
         virtual ~Test();
         void run ();
-    protected:
-    private:
 };
 
 #endif // TEST_H

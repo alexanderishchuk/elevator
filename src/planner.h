@@ -1,16 +1,17 @@
 #ifndef PLANNER_H
 #define PLANNER_H
 
+#include "clock.h"
 
 class Planner
 {
     public:
         Planner();
         virtual ~Planner();
-        void plan_passanger(int);
+        void plan_psngr(int);
     protected:
     private:
-        new_psngr_time[2][3];
+        int psngr_time[2][3];
 };
 
 #endif // PLANNER_H
